@@ -1,24 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <meta nmae="viewport" content="width=device-width", initial-scale="1.0">
-        <title> Text Formatting</title>
-    </head>
+<html>
+<head>
+    <title>Happo Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<body> basic website floders 5 ,programfile,
-    pgn
+<header>
+    <h1>Happo</h1>
+    <h2>Premium fashion for everyday confidence</h2>
+    <button onclick="shopNow()">Shop Now</button>
+</header>
 
+<section class="products">
 
-     <h1> Heading 1</h1>
-     <h2> Heading 2</h2>
-     <a href="www.google.com">
-        click me here
-     </a>
-<h3> Heading 3</h3>
+    <div class="product">
+        <h3>Berlin-[BLUE]</h3>
+        <p>₹299</p>
+        <button>shop now </button>
+    </div>
 
+    <div class="product">
+        <h3>Berlin-[ORANGE]</h3>
+        <p>₹299</p>
+        <button>View Product</button>
+    </div>
+
+</section >
+
+     <div class="product">
+          <h4>Berlin-[NAVY BLUE]</h4>
+          <P>₹299</P>
+          button>View Product</button>
+     </div>
+
+<footer>
+    <p>© 2026 Happo Shopping • Built with ❤️</p>
+</footer>
+
+<script>
+function shopNow() {
+    alert("Redirecting to shopping section!");
+}
+</script>
+ <a href="http://google.com">Go To Google</a>
 </body>
-
 </html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
 
+header {
+    background-color: rgb(0, 0, 255);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
 
+header button {
+    background: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #eee;
+    font-size: 14px;
+}
